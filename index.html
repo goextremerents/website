@@ -1,0 +1,512 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoExtreme! — Adventure, Accessible</title>
+    <meta
+      name="description"
+      content="GoExtreme! electric board rides, training sessions, trail rides & outdoor experiences. Adventure that’s accessible — beginners and kids welcome."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body>
+    <!-- Ambient background textures -->
+    <div class="bg-noise" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="GoExtreme home">
+          <span class="brand__mark">GO</span>
+          <span class="brand__name">Extreme!</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#experiences" class="nav__link">Experiences</a>
+          <a href="#how" class="nav__link">How it works</a>
+          <a href="#safety" class="nav__link">Safety</a>
+          <a href="#events" class="nav__link">Sessions</a>
+          <a href="#faq" class="nav__link">FAQ</a>
+          <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Adventure • Accessible • Community</p>
+            <h1 class="hero__title">
+              GO <span class="hero__titleAccent">EXTREME!</span>
+            </h1>
+            <p class="hero__subtitle">
+              Electric board rides, training sessions & trail adventures — built for beginners, families,
+              and anyone who wants more fun outdoors.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Get riding</a>
+              <a class="btn btn--ghost" href="#experiences">See experiences</a>
+            </div>
+
+            <div class="hero__chips" role="list" aria-label="Highlights">
+              <div class="chip" role="listitem">Beginner-friendly</div>
+              <div class="chip" role="listitem">Kids welcome*</div>
+              <div class="chip" role="listitem">Gear included</div>
+            </div>
+
+            <p class="hero__fineprint">
+              *Age suitability depends on rider confidence and guardian approval.
+            </p>
+          </div>
+
+          <div class="hero__media">
+            <!-- Option A: image -->
+            <img
+              src="./assets/hero.webp"
+              alt="Riders enjoying an electric board session outdoors"
+              class="hero__img"
+              loading="eager"
+            />
+            <!-- Option B: video (comment image above and uncomment this)
+            <video class="hero__video" autoplay muted loop playsinline poster="./assets/hero.webp">
+              <source src="./assets/hero.mp4" type="video/mp4" />
+            </video>
+            -->
+            <div class="hero__badge">
+              <div class="hero__badgeTop">Training & Trail Rides</div>
+              <div class="hero__badgeBottom">Outdoor sessions • City routes • Park rides</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkered divider -->
+        <div class="checkered" aria-hidden="true"></div>
+      </section>
+
+      <!-- About / What -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Welcome to the world of extreme outdoor experiences.</h2>
+            <p class="lead">
+              We rent gear, organise sessions, and bring people together — with one goal: spreading a
+              little adrenaline and a lot of joy.
+            </p>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">01</div>
+              <div class="stat__label">Accessible onboarding</div>
+              <div class="stat__text">Learn the basics fast with friendly coaching.</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">02</div>
+              <div class="stat__label">Real routes</div>
+              <div class="stat__text">Parks, trails and scenic city rides.</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">03</div>
+              <div class="stat__label">Community vibes</div>
+              <div class="stat__text">Meet riders, share tips, ride together.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiences -->
+      <section class="section section--alt" id="experiences">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Experiences</h2>
+            <p class="lead">Choose your vibe — from first ride to trail session.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🏁</div>
+              <h3 class="h3">Training Sessions</h3>
+              <p>Perfect for first-timers. Balance, control, safe turns, and confidence.</p>
+              <a class="card__link" href="#contact">Ask about training →</a>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🌲</div>
+              <h3 class="h3">Trail Rides</h3>
+              <p>Guided outdoor sessions with pace matched to the group.</p>
+              <a class="card__link" href="#events">See sessions →</a>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">⚡</div>
+              <h3 class="h3">Demo Days</h3>
+              <p>Try different boards, meet riders, and find your favorite setup.</p>
+              <a class="card__link" href="#contact">Join a demo →</a>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🎪</div>
+              <h3 class="h3">Open Events</h3>
+              <p>Festivals, park days, community meetups — come say hi.</p>
+              <a class="card__link" href="#contact">Invite us →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section" id="how">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">How it works</h2>
+            <p class="lead">No booking system yet — just message us and we’ll sort you out.</p>
+          </div>
+
+          <ol class="steps">
+            <li class="step">
+              <div class="step__num">1</div>
+              <div class="step__body">
+                <h3 class="h3">Pick an experience</h3>
+                <p>Training, trail ride, demo day, or a private session for your group.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__num">2</div>
+              <div class="step__body">
+                <h3 class="h3">Message us</h3>
+                <p>Tell us your level, group size, and preferred date — we confirm the details.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__num">3</div>
+              <div class="step__body">
+                <h3 class="h3">Meet, gear up, ride</h3>
+                <p>We provide guidance, helmets, and route planning — you bring the good mood.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Safety -->
+      <section class="section section--alt" id="safety">
+        <div class="container safety">
+          <div class="safety__copy">
+            <h2 class="h2">Safety-first, always</h2>
+            <p class="lead">
+              Adventure should feel exciting — not risky. We keep sessions structured and supportive.
+            </p>
+
+            <ul class="bullets">
+              <li>Intro coaching before we increase speed or terrain difficulty</li>
+              <li>Helmets and safety guidance included</li>
+              <li>Routes adapted to the group level</li>
+              <li>Weather-aware planning (we’ll reschedule if needed)</li>
+            </ul>
+
+            <div class="note">
+              <strong>Family-friendly approach:</strong> we can run calm “first ride” sessions for kids +
+              parents (depending on age/size and confidence).
+            </div>
+          </div>
+
+          <div class="safety__media">
+            <img
+              src="./assets/safety.png"
+              alt="Rider with helmet preparing for a session"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sessions / Events preview -->
+      <section class="section" id="events">
+        <div class="container">
+          <div class="section__head section__head--split">
+            <div>
+              <h2 class="h2">Upcoming sessions</h2>
+              <p class="lead">A simple preview for now. Full calendar is coming later.</p>
+            </div>
+            <a class="btn btn--ghost" href="#contact">Get notified</a>
+          </div>
+
+          <div class="events">
+            <!-- Replace these with your real items -->
+            <article class="event">
+              <img
+                src="./assets/event-borisova-1.jpg"
+                alt="One wheel training session at Borisova Gradina"
+                class="event__img"
+                loading="lazy"
+              />
+              <div class="event__tag">Training</div>
+              <h3 class="h3">Intro Session — City Park</h3>
+              <p class="event__meta">Sunday • 2–5 PM • Borisova Gradina (example)</p>
+              <p>Beginner-friendly, calm pace, lots of coaching.</p>
+            </article>
+
+            <article class="event">
+              <img
+                src="./assets/event-trail-1.jpg"
+                alt="Upcoming trail ride group with one wheel boards"
+                class="event__img"
+                loading="lazy"
+              />
+              <div class="event__tag event__tag--alt">Upcoming</div>
+              <h3 class="h3">Trail Ride — Scenic Route</h3>
+              <p class="event__meta">Date and location coming soon.</p>
+              <p>Guided ride with route adapted to the group level.</p>
+            </article>
+
+            <article class="event">
+              <div class="event__img event__img--label" role="img" aria-label="Meet and greet soon">
+                <span>MEET &amp; GREET</span>
+                <small>SOON</small>
+              </div>
+              <div class="event__tag event__tag--open">Upcoming</div>
+              <h3 class="h3">Demo Day — Meet & Try</h3>
+              <p class="event__meta">Date and location coming soon.</p>
+              <p>Try boards, meet riders, learn basics.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section section--alt" id="gallery">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Gallery</h2>
+            <p class="lead">Photos from our sessions and events.</p>
+          </div>
+
+          <div class="gallery" data-lightbox>
+            <!-- Use your own images; keep consistent aspect ratio if you can -->
+            <button class="gallery__item">
+              <img src="./assets/g-1.jpeg" alt="Riders in a park" loading="lazy" />
+            </button>
+            <button class="gallery__item">
+              <img src="./assets/g-2.jpeg" alt="Close-up of board on trail" loading="lazy" />
+            </button>
+            <button class="gallery__item">
+              <img src="./assets/g-3.jpeg" alt="Group photo after ride" loading="lazy" />
+            </button>
+            <button class="gallery__item">
+              <img src="./assets/g-4.jpeg" alt="Sunset ride" loading="lazy" />
+            </button>
+            <button class="gallery__item">
+              <img src="./assets/g-5.jpeg" alt="Helmet and gear" loading="lazy" />
+            </button>
+            <button class="gallery__item">
+              <img src="./assets/g-6.jpeg" alt="Trail section" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">FAQ</h2>
+            <p class="lead">Quick answers. If you’re unsure — message us.</p>
+          </div>
+
+          <div class="faq" data-accordion>
+            <details class="faq__item">
+              <summary>Is it hard to learn?</summary>
+              <p>Most people get comfortable within 20–30 minutes with proper coaching.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>Do I need experience?</summary>
+              <p>No. Training sessions are designed for first-timers.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>Are kids allowed?</summary>
+              <p>
+                Yes for calm sessions, depending on age/size and confidence. A guardian must be present.
+              </p>
+            </details>
+
+            <details class="faq__item">
+              <summary>What should I wear?</summary>
+              <p>Comfortable clothes and closed shoes. If it’s a trail ride, layers help.</p>
+            </details>
+
+            <details class="faq__item">
+              <summary>What if the weather is bad?</summary>
+              <p>We’ll reschedule or switch to a safer route. Safety first.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--alt" id="contact">
+        <div class="container contact">
+          <div class="contact__copy">
+            <h2 class="h2">Ready to ride?</h2>
+            <p class="lead">
+              Tell us what you want to try (training, trail ride, demo day) and we’ll reply with options.
+            </p>
+
+            <div class="contact__links">
+              <div class="contact__actions" aria-label="Quick contact actions">
+                <a
+                  class="icon-btn"
+                  href="https://wa.me/359878752742"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open WhatsApp chat"
+                  title="WhatsApp"
+                >
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <rect width="24" height="24" rx="4" fill="#25D366" />
+                    <path
+                      d="M12.04 7a4.98 4.98 0 0 0-4.98 4.98c0 .94.26 1.86.76 2.65l.12.19-.5 1.84 1.88-.49.18.1a4.97 4.97 0 0 0 2.54.7h.01a4.98 4.98 0 0 0 4.98-4.98 4.95 4.95 0 0 0-5-5zm2.93 7.12c-.13.35-.73.67-1.01.71-.3 0-.6-.02-.94-.06a8.51 8.51 0 0 1-.85-.32c-1.5-.65-2.48-2.16-2.56-2.26-.08-.1-.61-.81-.61-1.55 0-.74.39-1.1.52-1.25a.55.55 0 0 1 .4-.19l.29.01c.09 0 .22-.04.34.25.12.3.42 1.04.46 1.11.04.08.06.16.01.26-.05.1-.07.16-.15.25-.07.09-.16.2-.22.26a.33.33 0 0 0-.07.31c.09.15.39.64.83 1.04.57.5 1.06.66 1.21.74.15.07.24.06.32-.04.09-.1.38-.44.48-.59.1-.15.2-.12.33-.08l1.03.49c.15.07.25.11.29.18s.04.36-.09.71z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a class="icon-btn" href="tel:+359878752742" aria-label="Call +359 87 875 2742" title="Call">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path
+                      d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.03-.24 1.13.38 2.35.58 3.56.58.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.06 21 3 13.94 3 5a1 1 0 0 1 1-1h3.48c.55 0 1 .45 1 1 0 1.21.2 2.43.58 3.56.12.36.04.75-.24 1.03l-2.2 2.2Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <p class="contact__email" aria-label="Contact email">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path
+                      d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.98-.25L12 11.42 19.02 6.5H4.98Zm14.52 2.2-7.07 4.95a.75.75 0 0 1-.86 0L4.5 8.7v8.55c0 .14.11.25.25.25h14.5a.25.25 0 0 0 .25-.25V8.7Z"
+                    />
+                  </svg>
+                </span>
+                <span>contact@goextreme.live</span>
+              </p>
+              <p class="contact__email" aria-label="Contact phone">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path
+                      d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.03-.24 1.13.38 2.35.58 3.56.58.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.06 21 3 13.94 3 5a1 1 0 0 1 1-1h3.48c.55 0 1 .45 1 1 0 1.21.2 2.43.58 3.56.12.36.04.75-.24 1.03l-2.2 2.2Z"
+                    />
+                  </svg>
+                </span>
+                <span>+359 87 875 2742</span>
+              </p>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm">
+            <label class="field">
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Your name" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@email.com"
+                required
+              />
+            </label>
+
+            <label class="field">
+              <span>What are you interested in?</span>
+              <select name="interest">
+                <option>Training session</option>
+                <option>Trail ride</option>
+                <option>Demo day</option>
+                <option>Private group session</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Message</span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Tell us your experience level, preferred date, and group size."
+                required
+              ></textarea>
+            </label>
+
+            <button class="btn btn--primary btn--full" type="submit">Send message</button>
+            <p class="form__hint" id="formHint">
+              This demo form opens your email client. Later you can wire Formspree/Netlify.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <span class="brand__mark">GO</span> <span class="brand__name">Extreme!</span>
+          </div>
+          <p class="footer__text">Adventure that’s accessible. Ride safe. Have fun.</p>
+        </div>
+
+        <div class="footer__right">
+          <a href="#top" class="footer__link">Back to top ↑</a>
+          <a href="mailto:contact@goextreme.live" class="footer__link">contact@goextreme.live</a>
+          <a
+            href="https://www.instagram.com/goextremerents/"
+            class="footer__link footer__social"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GoExtreme Instagram"
+          >
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <path
+                d="M7.25 3h9.5A4.25 4.25 0 0 1 21 7.25v9.5A4.25 4.25 0 0 1 16.75 21h-9.5A4.25 4.25 0 0 1 3 16.75v-9.5A4.25 4.25 0 0 1 7.25 3Zm0 1.5A2.75 2.75 0 0 0 4.5 7.25v9.5a2.75 2.75 0 0 0 2.75 2.75h9.5a2.75 2.75 0 0 0 2.75-2.75v-9.5a2.75 2.75 0 0 0-2.75-2.75h-9.5Zm9.85 1.65a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 1.5A3 3 0 1 0 15 12a3 3 0 0 0-3-3Z"
+              />
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox (optional) -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox__close" type="button" aria-label="Close">×</button>
+      <img class="lightbox__img" alt="" />
+    </div>
+  </body>
+</html>
