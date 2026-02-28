@@ -51,7 +51,7 @@
       `Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\nMessage:\n${message}\n`
     );
 
-    window.location.href = `mailto:contact@goextreme.live?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@goextreme.life?subject=${subject}&body=${body}`;
   });
 
   // Gallery lightbox (optional)
